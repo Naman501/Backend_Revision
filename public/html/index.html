@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
 </head>
 <body>
-    <h2>Static</h2>
-<script src="javascript/scripts.js"></script>
+    <h2>Static File</h2>
+<script src="/socket.io/socket.io.js" ></script>
+<script>
+const socket = io("http://localhost:5000");
+socket.on("message", (data) => {
+console.log(data);
+
+});
+</script>
 </body>
 
 </html>

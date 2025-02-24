@@ -10,12 +10,12 @@ describe('GET /', () => {
 
 
 
-describe("POST/user", () => {
+describe("POST /user", () => {
     it("should create a user with valid test", (done) => {
       request(app)
         .post("/user")
-        .send({ name: "Coder29" })
-        .expect(201, "User Coder29 created", done);
+        .send({ name: "NAMAN" })
+        .expect(201, "User NAMAN created", done);
     });
 
 

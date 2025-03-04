@@ -34,6 +34,23 @@ app.get("/api/v1/languages",(req,res)=>{
     })
 })
 
+app.get("/api/v1/everysemester",(req,res)=>{
+    const months=[
+        {id:"Month 1" ,name:"iss baar 9sg paar"},
+        {id:"Month 2"  ,name:"8 sg aa jaye bass"},
+        {id:"Month 3"  ,name:"pass ho jaaaun bass"},
+        {id:"Month 4" ,name:"Bass back na aaye"},
+        {id:"Month 5" ,name:"Chxd gaye guru"},
+
+    ]
+
+    res.status(200).json({
+        success:true,
+        msg:"Show all halaat",
+        Data:months
+    })
+})
+
 
 app.get("/",(req,res)=>{
     res.send("<h1>HOME</h1>")
